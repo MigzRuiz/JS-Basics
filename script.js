@@ -40,4 +40,6 @@ console.log(name + " is a " + age + " year old " + job + ". Is he married? " + i
 var lastName = prompt("What is the last name?");
 console.log(lastName);
 
-alert(lastName);
+//alert(lastname);
+
+// LECTURE 3 - OPERATORS
