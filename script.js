@@ -1,45 +1,23 @@
-// LECTURE 1: VARIABLES - DATA TYPES
-/*
-//STRING - text
-var name = "John";
-var lastName = "Smith";
+//Coding Challenge
+//1.) Create variables for the heights and ages of two friends and assign them some values
+var jHeight = 155;
+var fHeight = 155;
 
-//NUMBER - floats
-var age = 26;
+var jAge = 25;
+var fAge = 25;
 
-//BOOLEAN - true or false
-var fullAge = true;
+//Calculate their score
+//h + (5 * age)
+var jTotal = jHeight + (5*jAge);
+var fTotal = fHeight + (5*fAge);
 
-//UNDEFINED - no value
-//NULL - non-existent
-
-console.log(name);
-console.log(lastName);
-console.log(age);
-console.log(fullAge);
-*/
-
-// LECTURE 2: VARIABLES 2
-var name = "John";
-var age = 26;
-console.log(name+age);  // John26 - string
-//This is called coercion, JS changes the data type on the fly.
-
-var job, isMarried;
-console.log(job); //Undefined
-job = "Teacher";
-isMarried = false;
-
-console.log(name + " is a " + age + " year old " + job + ". Is he married? " + isMarried);
-
-age = "thirty six"; 
-job = "driver";
-
-console.log(name + " is a " + age + " year old " + job + ". Is he married? " + isMarried);
-
-var lastName = prompt("What is the last name?");
-console.log(lastName);
-
-//alert(lastname);
-
-// LECTURE 3 - OPERATORS
+//Get who wins
+if (jTotal > fTotal) {
+    console.log("John Wins " + jTotal);
+} else if(fTotal > jTotal) {
+    console.log("Friend Wins "  + fTotal);
+} else if (jTotal == fTotal) {
+    console.log("Tie " + jTotal);
+} else {
+    console.log("Error");
+}
