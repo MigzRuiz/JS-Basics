@@ -1,23 +1,27 @@
-//Coding Challenge
-//1.) Create variables for the heights and ages of two friends and assign them some values
-var jHeight = 155;
-var fHeight = 155;
+//Hoisting
+/*
+calculateAge(1999);
+function calculateAge(year) {
+    console.log(2018 - year);
+}
+*/
 
-var jAge = 25;
-var fAge = 25;
+//Scoping
+var a = 'Hello';
+first();
 
-//Calculate their score
-//h + (5 * age)
-var jTotal = jHeight + (5*jAge);
-var fTotal = fHeight + (5*fAge);
+function first() {
+    var b = "Hi";
+    second();
 
-//Get who wins
-if (jTotal > fTotal) {
-    console.log("John Wins " + jTotal);
-} else if(fTotal > jTotal) {
-    console.log("Friend Wins "  + fTotal);
-} else if (jTotal == fTotal) {
-    console.log("Tie " + jTotal);
-} else {
-    console.log("Error");
+    function second() {
+        var c = "Bye";
+        //third();
+        console.log(a);
+    }
+}
+
+function third(){
+    var d = "Capt";
+    console.log(c);
 }
